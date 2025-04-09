@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+ <!-- Listado de actividades -->
+
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de actividades</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 12px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Listado de actividades!!!</h2>
+    <table>
+        <thead>
+          <tr>
+            <th>Inicio</th>
+            <th>Término</th>
+            <th>Comuna</th>
+            <th>Sector</th>
+            <th>Tema</th>
+            <th>Nombre organización</th>
+            <th>Total fotos</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-body">
+          <tr>
+            <td>2025-04-10 10:00</td>
+            <td>2025-04-10 13:00</td>
+            <td>Providencia</td>
+            <td>Parque Inés</td>
+            <td>Música</td>
+            <td>Festival Urbano</td>
+            <td>3</td>
+            <td>
+              <button type="button" id="ver_mas1" >Ver más</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2025-04-12 09:30</td>
+            <td>2025-04-12 11:00</td>
+            <td>La Florida</td>
+            <td>Plaza Central</td>
+            <td>Deporte</td>
+            <td>Club Atletismo Sur</td>
+            <td>2</td>
+            <td>
+              <button type="button" id="ver_mas2" onclick="verMasInfo(this)">Ver más</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2025-04-15 15:00</td>
+            <td>2025-04-15 18:00</td>
+            <td>Ñuñoa</td>
+            <td>Gimnasio Municipal</td>
+            <td>Juegos</td>
+            <td>Juega Ñuñoa</td>
+            <td>5</td>
+            <td>
+              <button type="button" id="ver_mas3" onclick="verMasInfo(this)">Ver más</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2025-04-20 17:00</td>
+            <td>2025-04-20 19:00</td>
+            <td>Peñalolén</td>
+            <td>Centro Cultural</td>
+            <td>Ciencias</td>
+            <td>Explora Chile</td>
+            <td>4</td>
+            <td>
+              <button type="button" id="ver_mas4" onclick="verMasInfo(this)">Ver más</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2025-04-25 08:00</td>
+            <td>2025-04-25 12:00</td>
+            <td>Maipú</td>
+            <td>Cancha Techada</td>
+            <td>Comida</td>
+            <td>Sabor Local</td>
+            <td>3</td>
+            <td>
+              <button type="button" id="ver_mas5" onclick="verMasInfo(this)">Ver más</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <script lang="javascript" src="T1.1.js"></script>
+
+

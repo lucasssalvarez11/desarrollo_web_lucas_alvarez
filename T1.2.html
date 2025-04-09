@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+ <!-- Agregar actividad -->
+
+ <title>Agregar actividad</title>
+
+ <p id="Agregador de actividades">
+  Agrega tu actividad!
+</p>
+
+ <body>
+
+  <div id="val-box" hidden>
+    <h2 id="val-msg"></h2>
+    <ul id="val-list"></ul>
+  </div>
+
+
+ <div class="formularios">
+
+    <form name="myForm" id="input-lugar">
+      <h2>Ubicación de la actividad:</h2>
+
+      <label for="region">Región</label>
+      <select name="region" id="region" required>
+          <option value="">Seleccione una region</option>
+      </select><br>
+
+      <label for="comuna">Comuna</label>
+      <select name="comuna" id="comuna" required>
+          <option value="">Seleccione una comuna </option>
+      </select><br>
+
+      <label for="sector">Sector</label>
+      <input id="sector" name="sector" type="text" maxlength="100"  required>
+       
+
+      <h2>Datos organizador:</h2>
+
+        <div>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" maxlength="200" required>
+        </div>
+
+        <div>
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" maxlength="100" required>
+        </div>
+
+        <div>
+        <label for="numero">Número de celular</label>
+        <input id="numero" name="numero"  type="tel" maxlength="100" required>
+        </div>
+
+        <div>
+        <label for="contactarx">Contactar por:</label>
+        <select id="contactarx" name="contactarx" required>
+          <option value="">Metodo de contacto</option>
+          <option value="whatsapp">Whatsapp</option>
+          <option value="telegram">Telegram</option>
+          <option value="x">X</option>
+          <option value="instagram">Instagram</option>
+          <option value="tiktok">Tiktok</option>
+          <option value="Facebook">Facebook</option>
+        </select><br>
+        </div>
+
+        <div id="url" hidden>
+          <label for="url">URL de la red social seleccionada:</label>
+          <input  id="url" name="url" minlength="4" maxlength="50" required>
+        </div>
+    
+    
+        <h2>Información actividad:</h2>
+        
+        <div>
+        <label for="fecha-inicio">Día y hora inicio</label>
+        <input id="fecha-inicio" name="fecha-inicio" type="datetime-local" required>
+        </div>
+
+        <div>
+        <label for="fecha-termino">Día y hora termino</label>
+        <input id="fecha-termino" name="fecha-termino" type="datetime-local" required>
+        </div>
+
+        <label for="descripcion">Descripción</label>
+        <textarea id="descripcion" name="descripcion" cols="50" rows="10"  required></textarea>
+     
+        <div>
+        <label for="tema">Tema</label>
+        <select id="tema" name="tema"  required>
+          <option value="">Selecciona un tema</option>
+          <option value="Musica">Musica</option>
+          <option value="Deporte">Deporte</option>
+          <option value="Ciencias">Ciencias</option>
+          <option value="Religión">Religión</option>
+          <option value="Politica">Politica</option>
+          <option value="Tecnologias">Tecnologias</option>
+          <option value="Juegos">Juegos</option>
+          <option value="Bailes">Bailes</option>
+          <option value="Comida">Comida</option>
+          <option value="Otro">Otro</option>
+        </select><br> 
+        </div>
+
+        <div id="otro" hidden>
+          <label for="otro">Agrega otro tema:</label>
+          <input  id="otro" name="otro" min="3" max="15" required>
+        </div>
+        
+
+        <label for="imagen">Fotos</label>
+        <input id="imagen" name="imagen" type="file" accept="image/*" required>
+    </form>
+
+
+    <button type="button" id="envio">Agregar actividad</button>
+
+ </div>
+
+ <script  src="T1.2.2.js"></script>
+ <script  src="T1.2.1.js"></script>
+</body>
+</html>
+
+
+
+
+    

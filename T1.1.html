@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title> Actividades cercanas </title> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 12px;
+            font-size: 16px;
+        }
+    </style>
+</html>
+
+<body>
+
+    <p id="titulo"> Buscador de actividades cercanas!</p>
+
+    <div class="botones">
+        <button type="button" id="agregar_actividad">
+            Agregar actividad
+        </button>
+        <button type="button" id="listado_actividades">
+            Listado de actividades
+        </button>
+        <button type="button" id="stats">
+            Estadísticas
+        </button>
+    </div>
+
+  
+        <h2>Ultimas actividades listadas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Inicio</th>
+                    <th>Termino</th>
+                    <th>Comuna</th>
+                    <th>Sector</th>
+                    <th>Tema</th>
+                    <th>Imagen</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="datetime-local" value="2025-04-01T10:00"></td>
+                    <td><input type="datetime-local" value="2025-04-01T12:00"></td>
+                    <td>Santiago</td>
+                    <td>Centro</td>
+                    <td>Deporte</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td><input type="datetime-local" value="2025-04-02T15:00"></td>
+                    <td><input type="datetime-local" value="2025-04-02T17:00"></td>
+                    <td>Providencia</td>
+                    <td>Parque</td>
+                    <td>Música</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td><input type="datetime-local" value="2025-04-03T18:00"></td>
+                    <td><input type="datetime-local" value="2025-04-03T20:00"></td>
+                    <td>Las Condes</td>
+                    <td>Mall</td>
+                    <td>Tecnología</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td><input type="datetime-local" value="2025-04-04T09:00"></td>
+                    <td><input type="datetime-local" value="2025-04-04T11:00"></td>
+                    <td>Ñuñoa</td>
+                    <td>Plaza</td>
+                    <td>Arte</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td><input type="datetime-local" value="2025-04-05T14:00"></td>
+                    <td><input type="datetime-local" value="2025-04-05T16:00"></td>
+                    <td>La Florida</td>
+                    <td>Estadio</td>
+                    <td>Fútbol</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+        </table>    
+        
+        <script lang="javascript" src="T1.1.js"></script>
+</body>
+</html>
